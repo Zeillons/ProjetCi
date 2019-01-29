@@ -12,3 +12,4 @@
 *.iml
 *.ipr
 /bin/
+/target/
