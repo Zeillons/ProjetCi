@@ -1,4 +1,4 @@
-package test;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,7 +8,7 @@ class JUnit5ExampleTest {
 
 	@Test
 	void test() {
-		fail("Not yet implemented shey");
+		fail("Not yet implemented sheyuh");
 	}
 
 }
