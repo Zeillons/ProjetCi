@@ -8,7 +8,7 @@ class JUnit5ExampleTest {
 
 	@Test
 	void test() {
-		fail("Not yet implemented sheyuh");
+		fail("Not yet implemented sheyuhh");
 	}
 
 }
