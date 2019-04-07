@@ -12,19 +12,8 @@ import fr.epsi.book.dal.ContactDAO;
 import fr.epsi.book.domain.Book;
 import fr.epsi.book.domain.Contact;
 
-class JUnit5SuperPutainExampleTest {
+class testContact {
 
-	@Test	
-	void creationBook() {
-		Book book = new Book();
-		assertNotEquals(null, book);
-	}
-	@Test	
-	void creationBookUniqueId() {
-		Book book0 = new Book();
-		Book book = new Book();
-		assertNotEquals(book0.getId(), book.getId());
-	}
 	@Test	
 	void creationContact() {
 		Book book = new Book();
@@ -43,7 +32,13 @@ class JUnit5SuperPutainExampleTest {
 		String tostring = contact.toString();
 		assertEquals("Contact{id='123', name='Teddy', email='teddy@sheh.fr', phone='1234', type=PERSO}", tostring);
 	}
-	
+	@Test	
+	void creationContactUniqueId() {
+		Book book = new Book();
+		Contact contact = new Contact(book);
+		Contact contact0 = new Contact(book);
+		assertNotEquals(contact0.getId(), contact.getId());
+	}
 	/*	App.restoreFromSer();
 		ContactDAO contactDao = new ContactDAO();
 		Contact contact = contactDao.findById("9d93f731-adc2-4abf-ab25-614f849c3143");

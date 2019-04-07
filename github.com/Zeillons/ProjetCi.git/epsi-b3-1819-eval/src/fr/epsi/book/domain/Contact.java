@@ -8,22 +8,22 @@ import java.util.UUID;
 public class Contact implements Serializable {
 	
 	private String id;
-	private String book;
+	private Book book;
 	private String name;
 	private String email;
 	private String phone;
 	private Type type;
 	
-	public Contact(String b) {
+	public Contact(Book b) {
 		id = UUID.randomUUID().toString();
 		book = b;
 	}
 	
-	public String getBook() {
+	public Book getBook() {
 		return book;
 	}
 	
-	public void setBook(String b) {
+	public void setBook(Book b) {
 		book = b;
 	}
 	

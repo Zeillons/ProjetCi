@@ -46,9 +46,6 @@ public class Book implements Serializable {
 	}
 	
 	public void addContact( Contact contact ) {
-		if(contacts.containsKey(contact.getId())) {
-			contacts.remove(contact.getId());
-		}
 		contacts.put( contact.getId(), contact );
 	}
 	
