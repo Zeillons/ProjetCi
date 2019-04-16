@@ -14,10 +14,12 @@ public class PersistenceManager {
 	private static Connection connection;
 	
 	private PersistenceManager() {
-		DB_PWD= System.getenv(ENV);
+		
 	}
 	
 	public static Connection getConnection() throws SQLException {
+		DB_PWD= System.getenv(ENV);
+		System.out.println("MDP = "+DB_PWD);
 		if ( null == connection || connection.isClosed() ) {
 			connection = DriverManager.getConnection( DB_URL, DB_LOGIN, DB_PWD );
 		}
