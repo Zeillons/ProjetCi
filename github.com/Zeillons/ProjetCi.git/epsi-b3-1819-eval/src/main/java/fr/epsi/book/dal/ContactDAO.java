@@ -8,8 +8,6 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sun.scenario.effect.light.Light.Type;
-
 public class ContactDAO implements IDAO<Contact, String> {
 	
 	private static final String INSERT_QUERY = "INSERT INTO contact (id, book, name, email, phone, type_num) values (?,?,?,?,?,?)";
