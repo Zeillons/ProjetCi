@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import fr.epsi.book.domain.Book;
 
-class JUnitTestBook2 {
+class JUnitTest2 {
 
 	@Test	
 	void creationBook() {
