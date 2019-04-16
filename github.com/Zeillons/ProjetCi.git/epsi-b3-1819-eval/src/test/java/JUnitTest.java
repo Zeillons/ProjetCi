@@ -52,10 +52,10 @@ class JUnitTest {
 	@Test	
 	void sheh() {
 		boolean sheh = false;
-		for(int i =0; i<100;i++) {
+		//for(int i =0; i<100;i++) {
 			Bullshit shehFactory = new Bullshit();
 			sheh = shehFactory.sheh();
-		}
+		//}
 		assertEquals(true, sheh);
 	}
 	
