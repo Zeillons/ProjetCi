@@ -15,5 +15,4 @@ class JUnitTestBook {
 		Book book = new Book();
 		assertNotEquals(book0.getId(), book.getId());
 	}
-	
 }

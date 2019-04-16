@@ -30,9 +30,4 @@ class JUnitTestContact {
 		Contact contact0 = new Contact(book);
 		assertNotEquals(contact0.getId(), contact.getId());
 	}
-	/*	App.restoreFromSer();
-		ContactDAO contactDao = new ContactDAO();
-		Contact contact = contactDao.findById("9d93f731-adc2-4abf-ab25-614f849c3143");
-		assertNotEquals(null, contactDao);*/
-
 }
