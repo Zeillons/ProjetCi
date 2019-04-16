@@ -16,9 +16,4 @@ class JUnitTestBook {
 		assertNotEquals(book0.getId(), book.getId());
 	}
 	
-	/*	App.restoreFromSer();
-		ContactDAO contactDao = new ContactDAO();
-		Contact contact = contactDao.findById("9d93f731-adc2-4abf-ab25-614f849c3143");
-		assertNotEquals(null, contactDao);*/
-
 }
