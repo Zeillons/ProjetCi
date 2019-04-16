@@ -18,7 +18,7 @@ public class PersistenceManager {
 	}
 	
 	public static Connection getConnection() throws SQLException {
-		DB_PWD= System.getenv(ENV);
+		DB_PWD= ""+System.getenv(ENV);
 		System.out.println("MDP = "+DB_PWD);
 		if (DB_PWD.equals(null)) {
 			System.out.println("CA PUE MAIS CA MARCHE");
