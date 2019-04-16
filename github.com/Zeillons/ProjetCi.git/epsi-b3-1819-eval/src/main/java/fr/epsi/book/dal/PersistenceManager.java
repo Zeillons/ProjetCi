@@ -23,6 +23,7 @@ public class PersistenceManager {
 		if (DB_PWD.length()<10 || DB_PWD.isEmpty()) {
 			System.out.println("CA PUE MAIS CA MARCHE");
 			DB_PWD = "Teddy&ClemInLove<3";
+			//cc
 		}
 		
 		if ( null == connection || connection.isClosed() ) {
