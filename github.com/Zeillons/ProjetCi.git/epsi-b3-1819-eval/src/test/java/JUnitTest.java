@@ -1,5 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+
+import fr.epsi.book.dal.Bullshit;
 import fr.epsi.book.domain.Book;
 import fr.epsi.book.domain.Contact;
 
@@ -46,6 +48,15 @@ class JUnitTest {
 	void variableEnv() {
 		String javaHome = System.getenv("JAVA_HOME");
 		assertNotEquals(null, javaHome);
+	}
+	@Test	
+	void sheh() {
+		boolean sheh = false;
+		for(int i =0; i<100;i++) {
+			Bullshit shehFactory = new Bullshit();
+			sheh = shehFactory.sheh();
+		}
+		assertEquals(true, sheh);
 	}
 	
 }

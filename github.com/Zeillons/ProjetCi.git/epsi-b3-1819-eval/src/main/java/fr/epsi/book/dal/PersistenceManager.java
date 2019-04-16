@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class PersistenceManager {
 	
-	private static final String DB_URL = "jdbc:mysql://shyndard.eu:3306/epsi?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	private static final String DB_LOGIN = "epsi";
-	private static final String DB_PWD = "epsi";
+	private static final String DB_URL = "jdbc:mysql://149.91.80.135:3306/teddy?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";//&serverTimezone=CEST
+	private static final String DB_LOGIN = "teddy";
+	private static final String DB_PWD = "Teddy&ClemInLove<3";
 	
 	private static Connection connection;
 	
