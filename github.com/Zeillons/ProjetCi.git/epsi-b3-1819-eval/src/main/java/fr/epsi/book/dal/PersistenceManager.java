@@ -20,7 +20,7 @@ public class PersistenceManager {
 	public static Connection getConnection() throws SQLException {
 		DB_PWD= ""+System.getenv(ENV);
 		System.out.println("MDP = "+DB_PWD);
-		if (DB_PWD.equals("")) {
+		if (DB_PWD.length()<10 || DB_PWD.isEmpty()) {
 			System.out.println("CA PUE MAIS CA MARCHE");
 			DB_PWD = "Teddy&ClemInLove<3";
 		}
