@@ -21,6 +21,7 @@ class JUnitTest {
 		Book book = new Book();
 		Contact contact = new Contact(book);
 		assertNotEquals(null, contact);
+		
 	}
 	@Test	
 	void creationContactUniqueId() {
