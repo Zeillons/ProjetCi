@@ -23,6 +23,13 @@ class JUnitTest {
 		assertNotEquals(null, contact);
 	}
 	@Test	
+	void creationContactUniqueId() {
+		Book book = new Book();
+		Contact contact = new Contact(book);
+		Contact contact0 = new Contact(book);
+		assertNotEquals(contact0.getId(), contact.getId());
+	}	
+	@Test	
 	void toStringContact() {
 		Book book = new Book();
 		Contact contact = new Contact(book);
@@ -34,4 +41,10 @@ class JUnitTest {
 		String tostring = contact.toString();
 		assertEquals("Contact{id='123', name='Teddy', email='teddy@sheh.fr', phone='1234', type=PERSO}", tostring);
 	}
+	@Test	
+	void variableEnv() {
+		String javaHome = System.getenv("JAVA_HOME");
+		assertNotEquals(null, javaHome);
+	}
+	
 }
