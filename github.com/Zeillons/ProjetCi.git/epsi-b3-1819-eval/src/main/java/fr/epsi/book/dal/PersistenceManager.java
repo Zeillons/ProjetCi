@@ -8,11 +8,14 @@ public class PersistenceManager {
 	
 	private static final String DB_URL = "jdbc:mysql://149.91.80.135:3306/teddy?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";//&serverTimezone=CEST
 	private static final String DB_LOGIN = "teddy";
-	private static final String DB_PWD = "Teddy&ClemInLove<3";
+	private static String DB_PWD = "";
+	private static final String ENV = "CITESTENV";
 	
 	private static Connection connection;
 	
-	private PersistenceManager() {}
+	private PersistenceManager() {
+		DB_PWD= System.getenv(ENV);
+	}
 	
 	public static Connection getConnection() throws SQLException {
 		if ( null == connection || connection.isClosed() ) {
