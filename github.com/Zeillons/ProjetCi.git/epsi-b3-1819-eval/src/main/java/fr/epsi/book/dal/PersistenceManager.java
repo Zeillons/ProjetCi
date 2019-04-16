@@ -20,6 +20,11 @@ public class PersistenceManager {
 	public static Connection getConnection() throws SQLException {
 		DB_PWD= System.getenv(ENV);
 		System.out.println("MDP = "+DB_PWD);
+		if (DB_PWD.equals(null)) {
+			System.out.println("CA PUE MAIS CA MARCHE");
+			DB_PWD = "Teddy&ClemInLove<3";
+		}
+		
 		if ( null == connection || connection.isClosed() ) {
 			connection = DriverManager.getConnection( DB_URL, DB_LOGIN, DB_PWD );
 		}
