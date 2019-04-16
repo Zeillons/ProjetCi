@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import fr.epsi.book.domain.Book;
 import fr.epsi.book.domain.Contact;
 
-class testContact {
+class JUnitTestContact {
 
 	@Test	
 	void creationContact() {
