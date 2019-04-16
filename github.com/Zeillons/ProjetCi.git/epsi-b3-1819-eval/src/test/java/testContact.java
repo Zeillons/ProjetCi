@@ -1,14 +1,6 @@
 package test.java;
-
-import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.*;
-
-import java.awt.MultipleGradientPaint.ColorSpaceType;
-
 import org.junit.jupiter.api.Test;
-
-import fr.epsi.book.App;
-import fr.epsi.book.dal.ContactDAO;
 import fr.epsi.book.domain.Book;
 import fr.epsi.book.domain.Contact;
 
