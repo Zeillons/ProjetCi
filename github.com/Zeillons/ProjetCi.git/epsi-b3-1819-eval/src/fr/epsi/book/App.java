@@ -312,7 +312,7 @@ public class App {
 		ContactDAO dao = new ContactDAO(); 
 		Map<String, Contact> mapContacts = new HashMap<>();
 		for ( Contact contact : dao.findAll()) {
-			contact.setBook(book); // A REVOIR, il fait pas recup tous les contacts mais bel et bien uniquement ceux d'un book precis (shéh)
+			contact.setBook(book); // A REVOIR, il fait pas recup tous les contacts mais bel et bien uniquement ceux d'un book precis (sheh)
 			mapContacts.put(contact.getId(), contact);
 		}
 		book.setContacts(mapContacts);
